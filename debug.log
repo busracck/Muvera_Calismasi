@@ -1,0 +1,1066 @@
+2025-08-08 00:02:54,401 - INFO - Use pytorch device_name: cuda:0
+2025-08-08 00:02:54,402 - INFO - Load pretrained SentenceTransformer: emrecan/bert-base-turkish-cased-mean-nli-stsb-tr
+2025-08-08 00:02:54,408 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-08-08 00:02:54,663 - DEBUG - https://huggingface.co:443 "HEAD /emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/resolve/main/modules.json HTTP/1.1" 307 0
+2025-08-08 00:02:54,683 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/c4d66371214a20c0c91a39c83351ddc24f398800/modules.json HTTP/1.1" 200 0
+2025-08-08 00:02:54,842 - DEBUG - https://huggingface.co:443 "HEAD /emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-08-08 00:02:54,860 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/c4d66371214a20c0c91a39c83351ddc24f398800/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-08-08 00:02:55,018 - DEBUG - https://huggingface.co:443 "HEAD /emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-08-08 00:02:55,038 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/c4d66371214a20c0c91a39c83351ddc24f398800/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-08-08 00:02:55,196 - DEBUG - https://huggingface.co:443 "HEAD /emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/resolve/main/README.md HTTP/1.1" 307 0
+2025-08-08 00:02:55,222 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/c4d66371214a20c0c91a39c83351ddc24f398800/README.md HTTP/1.1" 200 0
+2025-08-08 00:02:55,408 - DEBUG - https://huggingface.co:443 "HEAD /emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/resolve/main/modules.json HTTP/1.1" 307 0
+2025-08-08 00:02:55,438 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/c4d66371214a20c0c91a39c83351ddc24f398800/modules.json HTTP/1.1" 200 0
+2025-08-08 00:02:55,612 - DEBUG - https://huggingface.co:443 "HEAD /emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-08-08 00:02:55,632 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/c4d66371214a20c0c91a39c83351ddc24f398800/sentence_bert_config.json HTTP/1.1" 200 0
+2025-08-08 00:02:55,798 - DEBUG - https://huggingface.co:443 "HEAD /emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-08-08 00:02:55,967 - DEBUG - https://huggingface.co:443 "HEAD /emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/resolve/main/config.json HTTP/1.1" 307 0
+2025-08-08 00:02:55,986 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/c4d66371214a20c0c91a39c83351ddc24f398800/config.json HTTP/1.1" 200 0
+2025-08-08 00:02:56,218 - DEBUG - https://huggingface.co:443 "HEAD /emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/resolve/main/model.safetensors HTTP/1.1" 404 0
+2025-08-08 00:02:56,228 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-08-08 00:02:56,434 - DEBUG - https://huggingface.co:443 "GET /api/models/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr HTTP/1.1" 200 2161
+2025-08-08 00:02:56,723 - DEBUG - https://huggingface.co:443 "GET /api/models/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/commits/main HTTP/1.1" 200 1556
+2025-08-08 00:02:56,877 - DEBUG - https://huggingface.co:443 "HEAD /emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-08-08 00:02:56,902 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/c4d66371214a20c0c91a39c83351ddc24f398800/tokenizer_config.json HTTP/1.1" 200 0
+2025-08-08 00:02:56,903 - DEBUG - https://huggingface.co:443 "GET /api/models/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/discussions?p=0 HTTP/1.1" 200 2606
+2025-08-08 00:02:57,082 - DEBUG - https://huggingface.co:443 "GET /api/models/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/commits/refs%2Fpr%2F1 HTTP/1.1" 200 2521
+2025-08-08 00:02:57,183 - DEBUG - https://huggingface.co:443 "GET /api/models/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-08-08 00:02:57,318 - DEBUG - https://huggingface.co:443 "HEAD /emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/resolve/refs%2Fpr%2F1/model.safetensors.index.json HTTP/1.1" 404 0
+2025-08-08 00:02:57,401 - DEBUG - https://huggingface.co:443 "HEAD /emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-08-08 00:02:57,420 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/c4d66371214a20c0c91a39c83351ddc24f398800/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-08-08 00:02:57,492 - DEBUG - https://huggingface.co:443 "HEAD /emrecan/bert-base-turkish-cased-mean-nli-stsb-tr/resolve/refs%2Fpr%2F1/model.safetensors HTTP/1.1" 302 0
+2025-08-08 00:02:57,717 - DEBUG - https://huggingface.co:443 "GET /api/models/emrecan/bert-base-turkish-cased-mean-nli-stsb-tr HTTP/1.1" 200 2161
+2025-08-08 00:02:57,972 - INFO - CSV dosyası okunuyor
+2025-08-08 00:02:57,990 - INFO - Geliştirilecek içerik sayısı: 22
+2025-08-08 00:02:57,991 - INFO - İşleniyor: 17 - google reklam verme nasıl
+2025-08-08 00:02:57,992 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:57,992 - DEBUG - Adım 1: Google reklamları direkt satış getiren, geri dönüşü kolayca ölçülebilen en iyi internet reklam aracıdır.
+2025-08-08 00:02:57,992 - INFO - İçerik geliştiriliyor: google reklam verme nasıl
+2025-08-08 00:02:57,995 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:57,998 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:57,998 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,243 - DEBUG - Benzerlik skoru: 0.7207990884780884
+2025-08-08 00:02:58,243 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,244 - INFO - İşleniyor: 24 - google reklamı oluşturma rehberi
+2025-08-08 00:02:58,244 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,244 - DEBUG - Adım 1: Google reklamları direkt satış getiren, geri dönüşü kolayca ölçülebilen en iyi internet reklam aracıdır.
+2025-08-08 00:02:58,244 - INFO - İçerik geliştiriliyor: google reklamı oluşturma rehberi
+2025-08-08 00:02:58,244 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,245 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,245 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,282 - DEBUG - Benzerlik skoru: 0.6638236045837402
+2025-08-08 00:02:58,283 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,283 - INFO - İşleniyor: 57 - google reklam verme nasıl
+2025-08-08 00:02:58,283 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,283 - DEBUG - Adım 1: Google Ads Nedir?
+2025-08-08 00:02:58,283 - INFO - İçerik geliştiriliyor: google reklam verme nasıl
+2025-08-08 00:02:58,284 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,285 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,285 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,318 - DEBUG - Benzerlik skoru: 0.6695600152015686
+2025-08-08 00:02:58,319 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,319 - INFO - İşleniyor: 825 - google reklam verme nasıl
+2025-08-08 00:02:58,319 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,319 - DEBUG - Adım 1: hizmetlerimiz
+Sıkça sorulan sorular
+Uzmanlarımıza sıkça sorulan sorulara buradan ulaşabilirsiniz.
+Google Ads Nedir?
+Google Ads ürününüz ya da hizmetiniz için hızlı ve basit bir reklam mecrasıdır. Google Ads reklamları aracılığıyla reklamlarınız Google'da arama sonuçlarında yayınlanır. Minimum bir aylık ücret ödemenizi gerektirmeyen Google Ads reklamlarında, kullanıcılar reklamınıza tıkladığında ödeme yaparsınız. Google Ads reklamlarını başlatmak için başvuru formunu doldurmanız yeterlidir. 
+Instagram Reklamları Ürünüm/Hizmetim için Yararlı Olur Mu?
+Twitter Reklam Türleri Nelerdir?
+Neden Mobil Uyumlu Bir Web Sitesi Yaptırmalıyım?
+2025-08-08 00:02:58,319 - INFO - İçerik geliştiriliyor: google reklam verme nasıl
+2025-08-08 00:02:58,320 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,321 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,321 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,367 - DEBUG - Benzerlik skoru: 0.692107081413269
+2025-08-08 00:02:58,367 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,368 - INFO - İşleniyor: 832 - google reklamı oluşturma rehberi
+2025-08-08 00:02:58,368 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,368 - DEBUG - Adım 1: hizmetlerimiz
+Sıkça sorulan sorular
+Uzmanlarımıza sıkça sorulan sorulara buradan ulaşabilirsiniz.
+Google Ads Nedir?
+Google Ads ürününüz ya da hizmetiniz için hızlı ve basit bir reklam mecrasıdır. Google Ads reklamları aracılığıyla reklamlarınız Google'da arama sonuçlarında yayınlanır. Minimum bir aylık ücret ödemenizi gerektirmeyen Google Ads reklamlarında, kullanıcılar reklamınıza tıkladığında ödeme yaparsınız. Google Ads reklamlarını başlatmak için başvuru formunu doldurmanız yeterlidir. 
+Instagram Reklamları Ürünüm/Hizmetim için Yararlı Olur Mu?
+Twitter Reklam Türleri Nelerdir?
+Neden Mobil Uyumlu Bir Web Sitesi Yaptırmalıyım?
+2025-08-08 00:02:58,369 - INFO - İçerik geliştiriliyor: google reklamı oluşturma rehberi
+2025-08-08 00:02:58,369 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,371 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,372 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,414 - DEBUG - Benzerlik skoru: 0.6783806681632996
+2025-08-08 00:02:58,414 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,415 - INFO - İşleniyor: 833 - google reklam verme nasıl
+2025-08-08 00:02:58,415 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,415 - DEBUG - Adım 1: hizmetlerimiz
+Sıkça sorulan sorular
+Uzmanlarımıza sıkça sorulan sorulara buradan ulaşabilirsiniz.
+Google Ads Nedir?
+Google Ads ürününüz ya da hizmetiniz için hızlı ve basit bir reklam mecrasıdır. Google Ads reklamları aracılığıyla reklamlarınız Google'da arama sonuçlarında yayınlanır. Minimum bir aylık ücret ödemenizi gerektirmeyen Google Ads reklamlarında, kullanıcılar reklamınıza tıkladığında ödeme yaparsınız. Google Ads reklamlarını başlatmak için başvuru formunu doldurmanız yeterlidir. 
+Instagram Reklamları Ürünüm/Hizmetim için Yararlı Olur Mu?
+Twitter Reklam Türleri Nelerdir?
+Neden Mobil Uyumlu Bir Web Sitesi Yaptırmalıyım?
+2025-08-08 00:02:58,415 - INFO - İçerik geliştiriliyor: google reklam verme nasıl
+2025-08-08 00:02:58,416 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,417 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,417 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,464 - DEBUG - Benzerlik skoru: 0.692107081413269
+2025-08-08 00:02:58,464 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,465 - INFO - İşleniyor: 840 - google reklamı oluşturma rehberi
+2025-08-08 00:02:58,465 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,465 - DEBUG - Adım 1: hizmetlerimiz
+Sıkça sorulan sorular
+Uzmanlarımıza sıkça sorulan sorulara buradan ulaşabilirsiniz.
+Google Ads Nedir?
+Google Ads ürününüz ya da hizmetiniz için hızlı ve basit bir reklam mecrasıdır. Google Ads reklamları aracılığıyla reklamlarınız Google'da arama sonuçlarında yayınlanır. Minimum bir aylık ücret ödemenizi gerektirmeyen Google Ads reklamlarında, kullanıcılar reklamınıza tıkladığında ödeme yaparsınız. Google Ads reklamlarını başlatmak için başvuru formunu doldurmanız yeterlidir. 
+Instagram Reklamları Ürünüm/Hizmetim için Yararlı Olur Mu?
+Twitter Reklam Türleri Nelerdir?
+Neden Mobil Uyumlu Bir Web Sitesi Yaptırmalıyım?
+2025-08-08 00:02:58,465 - INFO - İçerik geliştiriliyor: google reklamı oluşturma rehberi
+2025-08-08 00:02:58,466 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,467 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,467 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,510 - DEBUG - Benzerlik skoru: 0.6783806681632996
+2025-08-08 00:02:58,510 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,511 - INFO - İşleniyor: 857 - google reklam verme nasıl
+2025-08-08 00:02:58,511 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,511 - DEBUG - Adım 1: Google Ads Nedir?
+Google Ads ürününüz ya da hizmetiniz için hızlı ve basit bir reklam mecrasıdır. Google Ads reklamları aracılığıyla reklamlarınız Google'da arama sonuçlarında yayınlanır. Minimum bir aylık ücret ödemenizi gerektirmeyen Google Ads reklamlarında, kullanıcılar reklamınıza tıkladığında ödeme yaparsınız. Google Ads reklamlarını başlatmak için başvuru formunu doldurmanız yeterlidir. 
+Instagram Reklamları Ürünüm/Hizmetim için Yararlı Olur Mu?
+Twitter Reklam Türleri Nelerdir?
+Neden Mobil Uyumlu Bir Web Sitesi Yaptırmalıyım?
+2025-08-08 00:02:58,511 - INFO - İçerik geliştiriliyor: google reklam verme nasıl
+2025-08-08 00:02:58,512 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,513 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,513 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,557 - DEBUG - Benzerlik skoru: 0.6734179258346558
+2025-08-08 00:02:58,557 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,558 - INFO - İşleniyor: 864 - google reklamı oluşturma rehberi
+2025-08-08 00:02:58,558 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,558 - DEBUG - Adım 1: Google Ads Nedir?
+Google Ads ürününüz ya da hizmetiniz için hızlı ve basit bir reklam mecrasıdır. Google Ads reklamları aracılığıyla reklamlarınız Google'da arama sonuçlarında yayınlanır. Minimum bir aylık ücret ödemenizi gerektirmeyen Google Ads reklamlarında, kullanıcılar reklamınıza tıkladığında ödeme yaparsınız. Google Ads reklamlarını başlatmak için başvuru formunu doldurmanız yeterlidir. 
+Instagram Reklamları Ürünüm/Hizmetim için Yararlı Olur Mu?
+Twitter Reklam Türleri Nelerdir?
+Neden Mobil Uyumlu Bir Web Sitesi Yaptırmalıyım?
+2025-08-08 00:02:58,558 - INFO - İçerik geliştiriliyor: google reklamı oluşturma rehberi
+2025-08-08 00:02:58,559 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,560 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,560 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,602 - DEBUG - Benzerlik skoru: 0.6653008460998535
+2025-08-08 00:02:58,602 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,603 - INFO - İşleniyor: 865 - google reklam verme nasıl
+2025-08-08 00:02:58,603 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,603 - DEBUG - Adım 1: Google Ads Nedir?
+Google Ads ürününüz ya da hizmetiniz için hızlı ve basit bir reklam mecrasıdır. Google Ads reklamları aracılığıyla reklamlarınız Google'da arama sonuçlarında yayınlanır. Minimum bir aylık ücret ödemenizi gerektirmeyen Google Ads reklamlarında, kullanıcılar reklamınıza tıkladığında ödeme yaparsınız. Google Ads reklamlarını başlatmak için başvuru formunu doldurmanız yeterlidir. 
+Instagram Reklamları Ürünüm/Hizmetim için Yararlı Olur Mu?
+Twitter Reklam Türleri Nelerdir?
+Neden Mobil Uyumlu Bir Web Sitesi Yaptırmalıyım?
+2025-08-08 00:02:58,603 - INFO - İçerik geliştiriliyor: google reklam verme nasıl
+2025-08-08 00:02:58,603 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,605 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,605 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,648 - DEBUG - Benzerlik skoru: 0.6734179258346558
+2025-08-08 00:02:58,648 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,649 - INFO - İşleniyor: 872 - google reklamı oluşturma rehberi
+2025-08-08 00:02:58,649 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,649 - DEBUG - Adım 1: Google Ads Nedir?
+Google Ads ürününüz ya da hizmetiniz için hızlı ve basit bir reklam mecrasıdır. Google Ads reklamları aracılığıyla reklamlarınız Google'da arama sonuçlarında yayınlanır. Minimum bir aylık ücret ödemenizi gerektirmeyen Google Ads reklamlarında, kullanıcılar reklamınıza tıkladığında ödeme yaparsınız. Google Ads reklamlarını başlatmak için başvuru formunu doldurmanız yeterlidir. 
+Instagram Reklamları Ürünüm/Hizmetim için Yararlı Olur Mu?
+Twitter Reklam Türleri Nelerdir?
+Neden Mobil Uyumlu Bir Web Sitesi Yaptırmalıyım?
+2025-08-08 00:02:58,649 - INFO - İçerik geliştiriliyor: google reklamı oluşturma rehberi
+2025-08-08 00:02:58,649 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,651 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,651 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,698 - DEBUG - Benzerlik skoru: 0.6653008460998535
+2025-08-08 00:02:58,699 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,699 - INFO - İşleniyor: 873 - google reklam verme nasıl
+2025-08-08 00:02:58,699 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,699 - DEBUG - Adım 1: Google Ads Nedir?
+Google Ads ürününüz ya da hizmetiniz için hızlı ve basit bir reklam mecrasıdır. Google Ads reklamları aracılığıyla reklamlarınız Google'da arama sonuçlarında yayınlanır. Minimum bir aylık ücret ödemenizi gerektirmeyen Google Ads reklamlarında, kullanıcılar reklamınıza tıkladığında ödeme yaparsınız. Google Ads reklamlarını başlatmak için başvuru formunu doldurmanız yeterlidir. 
+Instagram Reklamları Ürünüm/Hizmetim için Yararlı Olur Mu?
+Twitter Reklam Türleri Nelerdir?
+Neden Mobil Uyumlu Bir Web Sitesi Yaptırmalıyım?
+2025-08-08 00:02:58,700 - INFO - İçerik geliştiriliyor: google reklam verme nasıl
+2025-08-08 00:02:58,700 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,702 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,702 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,745 - DEBUG - Benzerlik skoru: 0.6734179258346558
+2025-08-08 00:02:58,745 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,746 - INFO - İşleniyor: 880 - google reklamı oluşturma rehberi
+2025-08-08 00:02:58,746 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,746 - DEBUG - Adım 1: Google Ads Nedir?
+Google Ads ürününüz ya da hizmetiniz için hızlı ve basit bir reklam mecrasıdır. Google Ads reklamları aracılığıyla reklamlarınız Google'da arama sonuçlarında yayınlanır. Minimum bir aylık ücret ödemenizi gerektirmeyen Google Ads reklamlarında, kullanıcılar reklamınıza tıkladığında ödeme yaparsınız. Google Ads reklamlarını başlatmak için başvuru formunu doldurmanız yeterlidir. 
+Instagram Reklamları Ürünüm/Hizmetim için Yararlı Olur Mu?
+Twitter Reklam Türleri Nelerdir?
+Neden Mobil Uyumlu Bir Web Sitesi Yaptırmalıyım?
+2025-08-08 00:02:58,746 - INFO - İçerik geliştiriliyor: google reklamı oluşturma rehberi
+2025-08-08 00:02:58,747 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,747 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,748 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,786 - DEBUG - Benzerlik skoru: 0.6653008460998535
+2025-08-08 00:02:58,786 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,787 - INFO - İşleniyor: 881 - google reklam verme nasıl
+2025-08-08 00:02:58,787 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,787 - DEBUG - Adım 1: Google Ads Nedir?
+Google Ads ürününüz ya da hizmetiniz için hızlı ve basit bir reklam mecrasıdır. Google Ads reklamları aracılığıyla reklamlarınız Google'da arama sonuçlarında yayınlanır. Minimum bir aylık ücret ödemenizi gerektirmeyen Google Ads reklamlarında, kullanıcılar reklamınıza tıkladığında ödeme yaparsınız. Google Ads reklamlarını başlatmak için başvuru formunu doldurmanız yeterlidir. 
+Instagram Reklamları Ürünüm/Hizmetim için Yararlı Olur Mu?
+Twitter Reklam Türleri Nelerdir?
+Neden Mobil Uyumlu Bir Web Sitesi Yaptırmalıyım?
+2025-08-08 00:02:58,787 - INFO - İçerik geliştiriliyor: google reklam verme nasıl
+2025-08-08 00:02:58,787 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,788 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,788 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,827 - DEBUG - Benzerlik skoru: 0.6734179258346558
+2025-08-08 00:02:58,827 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,827 - INFO - İşleniyor: 888 - google reklamı oluşturma rehberi
+2025-08-08 00:02:58,828 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,828 - DEBUG - Adım 1: Google Ads Nedir?
+Google Ads ürününüz ya da hizmetiniz için hızlı ve basit bir reklam mecrasıdır. Google Ads reklamları aracılığıyla reklamlarınız Google'da arama sonuçlarında yayınlanır. Minimum bir aylık ücret ödemenizi gerektirmeyen Google Ads reklamlarında, kullanıcılar reklamınıza tıkladığında ödeme yaparsınız. Google Ads reklamlarını başlatmak için başvuru formunu doldurmanız yeterlidir. 
+Instagram Reklamları Ürünüm/Hizmetim için Yararlı Olur Mu?
+Twitter Reklam Türleri Nelerdir?
+Neden Mobil Uyumlu Bir Web Sitesi Yaptırmalıyım?
+2025-08-08 00:02:58,828 - INFO - İçerik geliştiriliyor: google reklamı oluşturma rehberi
+2025-08-08 00:02:58,828 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,829 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,830 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,869 - DEBUG - Benzerlik skoru: 0.6653008460998535
+2025-08-08 00:02:58,870 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,871 - INFO - İşleniyor: 889 - google reklam verme nasıl
+2025-08-08 00:02:58,871 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,871 - DEBUG - Adım 1: Google Ads Nedir?
+Google Ads ürününüz ya da hizmetiniz için hızlı ve basit bir reklam mecrasıdır. Google Ads reklamları aracılığıyla reklamlarınız Google'da arama sonuçlarında yayınlanır. Minimum bir aylık ücret ödemenizi gerektirmeyen Google Ads reklamlarında, kullanıcılar reklamınıza tıkladığında ödeme yaparsınız. Google Ads reklamlarını başlatmak için başvuru formunu doldurmanız yeterlidir.
+2025-08-08 00:02:58,871 - INFO - İçerik geliştiriliyor: google reklam verme nasıl
+2025-08-08 00:02:58,872 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,874 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,874 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,920 - DEBUG - Benzerlik skoru: 0.6734179258346558
+2025-08-08 00:02:58,921 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,922 - INFO - İşleniyor: 896 - google reklamı oluşturma rehberi
+2025-08-08 00:02:58,922 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,922 - DEBUG - Adım 1: Google Ads Nedir?
+Google Ads ürününüz ya da hizmetiniz için hızlı ve basit bir reklam mecrasıdır. Google Ads reklamları aracılığıyla reklamlarınız Google'da arama sonuçlarında yayınlanır. Minimum bir aylık ücret ödemenizi gerektirmeyen Google Ads reklamlarında, kullanıcılar reklamınıza tıkladığında ödeme yaparsınız. Google Ads reklamlarını başlatmak için başvuru formunu doldurmanız yeterlidir.
+2025-08-08 00:02:58,922 - INFO - İçerik geliştiriliyor: google reklamı oluşturma rehberi
+2025-08-08 00:02:58,922 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,923 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,924 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:58,962 - DEBUG - Benzerlik skoru: 0.6653008460998535
+2025-08-08 00:02:58,962 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:58,963 - INFO - İşleniyor: 897 - google reklam verme nasıl
+2025-08-08 00:02:58,963 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:58,963 - DEBUG - Adım 1: Google Ads Nedir?
+2025-08-08 00:02:58,963 - INFO - İçerik geliştiriliyor: google reklam verme nasıl
+2025-08-08 00:02:58,964 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:58,964 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:58,965 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:59,000 - DEBUG - Benzerlik skoru: 0.6695600152015686
+2025-08-08 00:02:59,001 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:59,001 - INFO - İşleniyor: 905 - google reklam verme nasıl
+2025-08-08 00:02:59,001 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:59,001 - DEBUG - Adım 1: Google Ads Nedir?
+2025-08-08 00:02:59,001 - INFO - İçerik geliştiriliyor: google reklam verme nasıl
+2025-08-08 00:02:59,002 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:59,002 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:59,003 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:59,045 - DEBUG - Benzerlik skoru: 0.6695600152015686
+2025-08-08 00:02:59,045 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:59,045 - INFO - İşleniyor: 913 - google reklam verme nasıl
+2025-08-08 00:02:59,045 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:59,046 - DEBUG - Adım 1: Google Ads Nedir?
+2025-08-08 00:02:59,046 - INFO - İçerik geliştiriliyor: google reklam verme nasıl
+2025-08-08 00:02:59,046 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:59,047 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:59,048 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:59,086 - DEBUG - Benzerlik skoru: 0.6695600152015686
+2025-08-08 00:02:59,087 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:59,087 - INFO - İşleniyor: 1297 - google reklam verme nasıl
+2025-08-08 00:02:59,087 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:59,087 - DEBUG - Adım 1: Google Reklamları
+2025-08-08 00:02:59,087 - INFO - İçerik geliştiriliyor: google reklam verme nasıl
+2025-08-08 00:02:59,088 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:59,089 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:59,089 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:59,127 - DEBUG - Benzerlik skoru: 0.8116180896759033
+2025-08-08 00:02:59,127 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:59,127 - INFO - İşleniyor: 1304 - google reklamı oluşturma rehberi
+2025-08-08 00:02:59,128 - INFO - Zincirleme geliştirme başlıyor
+2025-08-08 00:02:59,128 - DEBUG - Adım 1: Google Reklamları
+2025-08-08 00:02:59,128 - INFO - İçerik geliştiriliyor: google reklamı oluşturma rehberi
+2025-08-08 00:02:59,128 - ERROR - gelistir_icerik fonksiyonunda hata
+Traceback (most recent call last):
+  File "/home/kitana/Desktop/muveraTool-demo/icerik_niyet_iylestirme.py", line 58, in gelistir_icerik
+    messages = prompt_template.format_messages(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 1188, in format_messages
+    message = message_template.format_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 560, in format_messages
+    return [self.format(**kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/chat.py", line 593, in format
+    text = self.prompt.format(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/prompts/prompt.py", line 186, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 190, in format
+    return self.vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kitana/Desktop/muveraTool-demo/.venv/lib/python3.11/site-packages/langchain_core/utils/formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 194, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 234, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 299, in get_field
+    obj = self.get_value(first, args, kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/string.py", line 256, in get_value
+    return kwargs[key]
+           ~~~~~~^^^^^
+KeyError: '\n    "sorgu"'
+2025-08-08 00:02:59,130 - WARNING - Model yanıtı boş, zincir durdu
+2025-08-08 00:02:59,130 - DEBUG - Benzerlik hesaplanıyor
+2025-08-08 00:02:59,177 - DEBUG - Benzerlik skoru: 0.7746797204017639
+2025-08-08 00:02:59,177 - INFO - Sonuç eklendi (%0.0 artmış)
+2025-08-08 00:02:59,186 - INFO - Kaydedildi → output/daha_uyumlu_json_formatli_output.csv
+2025-08-08 00:02:59,186 - INFO - Tüm işlemler tamamlandı
