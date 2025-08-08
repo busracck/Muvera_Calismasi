@@ -1,25 +1,32 @@
-from langchain_core.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate # type: ignore
+# prompts/sorgu_prompt.py
+# -*- coding: utf-8 -*-
+from langchain_core.prompts import (
+    ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate
+)
+
+system_template = """
+Rolün: Türkçe içerik iyileştirme ve SEO uyumunda uzman bir asistan.
+Görev: Verilen 'Kullanıcı Sorgusu' (niyet) ve 'Mevcut Metin' temelinde,
+sorguya doğrudan yanıt veren, kısa, net, dilbilgisel olarak doğru bir çıktı üret.
+
+ZORUNLU KURALLAR:
+1) KISA: h1/h2/li için tek cümle; p/div için en çok 2 kısa cümle.
+2) DOĞRULUK: Anlamı koru, konu dışına çıkma, yeni iddialar ekleme.
+3) NİYET YAKINLIK: Sorgudaki ana terim(ler) doğal biçimde geçsin.
+4) DİL: Türkçe, resmi/temiz, yarım cümle yok.
+5) BAŞLIK NOKTALAMA: h1/h2 sonda nokta OLMAZ; li ve p/div tam cümle ve nokta/soru işaretiyle biter.
+6) “nasıl …” kalıbı doğru çekimle yaz (örn: “nasıl yapılır?”, “nasıl verilir?”).
+
+Cevabı SADECE metin olarak ver; JSON, kod bloğu, açıklama verme.
+""".strip()
+
+human_template = """
+Kullanıcı Sorgusu: {sorgu}
+Mevcut Metin: {mevcut_metin}
+HTML Bölümü: {html_bolumu}
+""".strip()
 
 def get_sorgu_iyilestirme_prompt():
-    system_template = """
-    Kullanıcı şu sorguyla geldi: "{sorgu}"
-
-Mevcut içerik bu sorguyla %65-%85 benzerliğe sahip. Senin görevin:
-- Bu içeriği anlamını bozmadan yeniden yazmak.
-- Başta kullanıcı sorgusunu doğrudan yanıtla.
-- Sonra mevcut metnin içeriklerine sadık kalarak uygun detayları ekle.
-- Gereksiz tekrarlar, konu dışı ifadeler olmasın.
-- Yeni metin 1-2 kısa paragraf olmalı.
-- Sadece geliştirilen yeni metni döndür. HTML etiketi, başlık veya açıklama verme.
-    """
-
-    human_template = """
-    Sorgu: {sorgu}
-    Mevcut İçerik: {mevcut_metin}
-    HTML Bölümü: {html_bolumu}
-    """
-
-    system_prompt = SystemMessagePromptTemplate.from_template(system_template.strip())
-    human_prompt = HumanMessagePromptTemplate.from_template(human_template.strip())
-
-    return ChatPromptTemplate.from_messages([system_prompt, human_prompt])
+    sys_p = SystemMessagePromptTemplate.from_template(system_template)
+    hum_p = HumanMessagePromptTemplate.from_template(human_template)
+    return ChatPromptTemplate.from_messages([sys_p, hum_p])
