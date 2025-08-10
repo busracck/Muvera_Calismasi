@@ -1,32 +1,41 @@
-# prompts/sorgu_prompt.py
 # -*- coding: utf-8 -*-
-from langchain_core.prompts import (
-    ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate
-)
+"""
+Amaç: Kullanıcı Sorgusu ile Eski Metin uyumunu küçük ve güvenli dokunuşlarla artıran KISA bir metin üretmek.
+Çıktı: Tek JSON.
+"""
 
-system_template = """
-Rolün: Türkçe içerik iyileştirme ve SEO uyumunda uzman bir asistan.
-Görev: Verilen 'Kullanıcı Sorgusu' (niyet) ve 'Mevcut Metin' temelinde,
-sorguya doğrudan yanıt veren, kısa, net, dilbilgisel olarak doğru bir çıktı üret.
-
-ZORUNLU KURALLAR:
-1) KISA: h1/h2/li için tek cümle; p/div için en çok 2 kısa cümle.
-2) DOĞRULUK: Anlamı koru, konu dışına çıkma, yeni iddialar ekleme.
-3) NİYET YAKINLIK: Sorgudaki ana terim(ler) doğal biçimde geçsin.
-4) DİL: Türkçe, resmi/temiz, yarım cümle yok.
-5) BAŞLIK NOKTALAMA: h1/h2 sonda nokta OLMAZ; li ve p/div tam cümle ve nokta/soru işaretiyle biter.
-6) “nasıl …” kalıbı doğru çekimle yaz (örn: “nasıl yapılır?”, “nasıl verilir?”).
-
-Cevabı SADECE metin olarak ver; JSON, kod bloğu, açıklama verme.
+SYSTEM_TEMPLATE = """
+Rolün: Türkçe içerik editörü (E-E-A-T & semantik SEO).
+Kurallar:
+- Anlamı koru, yeni bilgi uydurma, CTA/pazarlama ekleme.
+- h1/h2: Tek cümle, nokta yok; soruysa "?".
+- li: Tek cümle, sonda nokta.
+- p/div: En fazla 2 kısa cümle.
+- Niyet terimi: Sorgudaki ana terim en az 1 kez birebir geçsin.
+- SADECE geçerli JSON döndür.
+JSON Şema:
+{
+  "kullanici_sorgusu": "...",
+  "eski_metin": "...",
+  "kisa_duzenleme": "..."
+}
 """.strip()
 
-human_template = """
-Kullanıcı Sorgusu: {sorgu}
-Mevcut Metin: {mevcut_metin}
+HUMAN_TEMPLATE = """
+Kullanıcı Sorgusu: {kullanici_sorgusu}
+Eski Metin: {eski_metin}
 HTML Bölümü: {html_bolumu}
+Eski Skor: {eski_skor}
+
+Lütfen SADECE geçerli bir JSON döndür.
 """.strip()
 
-def get_sorgu_iyilestirme_prompt():
-    sys_p = SystemMessagePromptTemplate.from_template(system_template)
-    hum_p = HumanMessagePromptTemplate.from_template(human_template)
-    return ChatPromptTemplate.from_messages([sys_p, hum_p])
+def build_prompt(kullanici_sorgusu: str, eski_metin: str, html_bolumu: str, eski_skor: float) -> str:
+    system = f"<|system|>\n{SYSTEM_TEMPLATE}"
+    user = f"<|user|>\n" + HUMAN_TEMPLATE.format(
+        kullanici_sorgusu=kullanici_sorgusu,
+        eski_metin=eski_metin,
+        html_bolumu=html_bolumu,
+        eski_skor=eski_skor,
+    )
+    return system + "\n" + user

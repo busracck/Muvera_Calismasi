@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Muvera | İyileştirilmiş Sonuçlar</title>
+<style>
+  :root{--bg1:#0e0f1d;--bg2:#141a3a;--glass:rgba(255,255,255,.06);--line:rgba(255,255,255,.10);--muted:#a7b0c2;--txt:#e8eef9;--good:#22c55e}
+  *{box-sizing:border-box} html,body{height:100%}
+  body{margin:0;color:var(--txt);font:14px/1.5 ui-sans-serif,system-ui,Segoe UI,Roboto;
+    background:radial-gradient(1100px 520px at 10% 10%,rgba(96,165,250,.22),transparent 60%),
+               radial-gradient(900px 480px at 90% 20%,rgba(167,139,250,.2),transparent 60%),
+               radial-gradient(900px 700px at 50% 100%,rgba(99,102,241,.18),transparent 60%),
+               linear-gradient(135deg,var(--bg1),var(--bg2))}
+  .wrap{max-width:1200px;margin:28px auto;padding:0 16px}
+  .hero{padding:22px;border:1px solid var(--line);border-radius:18px;
+    background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));box-shadow:0 25px 80px rgba(2,8,23,.45),inset 0 1px 0 rgba(255,255,255,.05)}
+  h1{margin:0 0 8px;font-size:22px}
+  .muted{color:var(--muted)}
+  .bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:12px}
+  select,button{background:var(--glass);border:1px solid var(--line);color:var(--txt);border-radius:12px;padding:10px 12px}
+  button{cursor:pointer}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:16px 0 10px}
+  .card{background:var(--glass);border:1px solid var(--line);border-radius:14px;padding:14px}
+  .num{font-size:20px;font-weight:700}
+  .ok{color:var(--good)}
+  table{width:100%;border-collapse:collapse}
+  th,td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  thead th{position:sticky;top:0;background:rgba(10,12,26,.75);backdrop-filter:blur(6px)}
+  tbody tr:hover{background:rgba(255,255,255,.04)}
+  .tag{display:inline-block;background:rgba(96,165,250,.12);border:1px solid rgba(96,165,250,.25);padding:2px 8px;border-radius:999px;font-size:11px;color:#cfe2ff}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  .chg{padding:2px 8px;border-radius:8px;font-weight:700;font-size:12px;background:rgba(34,197,94,.16);color:#86efac}
+  .hint{font-size:12px;color:var(--muted);margin-left:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <h1>Muvera • İyileştirilmiş İçerik Görüntüleyici</h1>
+    <div class="muted">“Yenile” dediğinde <b>output/</b> klasöründeki iki CSV API üzerinden okunur.</div>
+
+    <div class="bar">
+      <select id="viewSel">
+        <option value="niyet" selected>İçerik × Niyet</option>
+        <option value="sorgu">İçerik × Sorgu</option>
+      </select>
+      <button id="refreshBtn">Yenile (API)</button>
+      <span class="hint" id="status">Hazır.</span>
+    </div>
+
+    <div class="cards">
+      <div class="card"><div class="num" id="statRows">0</div><div class="muted">Satır</div></div>
+      <div class="card"><div class="num" id="statImproved">0</div><div class="muted">İyileşen</div></div>
+      <div class="card"><div class="num ok" id="statAvgNew">0.000</div><div class="muted">Ortalama Yeni Skor</div></div>
+      <div class="card"><div class="num ok" id="statAvgChange">0.00%</div><div class="muted">Ortalama % Artış</div></div>
+    </div>
+
+    <div id="tableWrap"></div>
+  </div>
+</div>
+
+<script>
+const API_BASE = "http://127.0.0.1:8000";
+const state = { niyet:null, sorgu:null };
+
+function fmtNum(n,d=3){ return n==null ? "" : Number(n).toFixed(d); }
+function fmtPct(n){ if(n==null) return ""; const s = n>0?"+":""; return s + Number(n).toFixed(2) + "%"; }
+
+const viewSel   = document.getElementById("viewSel");
+const refreshBtn= document.getElementById("refreshBtn");
+const statusEl  = document.getElementById("status");
+const tableWrap = document.getElementById("tableWrap");
+
+viewSel.addEventListener("change", render);
+refreshBtn.addEventListener("click", loadAll);
+
+async function load(kind){
+  const res = await fetch(`${API_BASE}/api/results/${kind}`);
+  if(!res.ok) throw new Error(`API ${kind} hata: ${res.status}`);
+  const data = await res.json();
+  const rows = (data.rows||[]).filter(r => (r.delta ?? 0) > 0.001);
+  state[kind] = rows;
+}
+
+async function loadAll(){
+  statusEl.textContent = "Yükleniyor...";
+  try{
+    await Promise.all([load("niyet"), load("sorgu")]);
+    statusEl.textContent = "Yüklendi.";
+    render();
+  }catch(e){
+    statusEl.textContent = (e && e.message) ? e.message : "Hata";
+  }
+}
+
+function render(){
+  const mode = viewSel.value; // "niyet" | "sorgu"
+  const data = state[mode] || [];
+
+  const avg = arr=> arr.length? arr.reduce((a,b)=>a+b,0)/arr.length : 0;
+  const avgNew = avg(data.map(r=> r.newScore ?? 0));
+  const avgDelta = avg(data.map(r=> r.delta ?? 0));
+
+  document.getElementById("statRows").textContent = data.length;
+  document.getElementById("statImproved").textContent = data.length;
+  document.getElementById("statAvgNew").textContent = (avgNew||0).toFixed(3);
+  document.getElementById("statAvgChange").textContent = (avgDelta||0).toFixed(2)+"%";
+
+  const label = (mode==="niyet") ? "Kullanıcı Niyeti" : "Kullanıcı Sorgusu";
+  const head = `
+    <tr>
+      <th>HTML Bölümü</th>
+      <th>${label}</th>
+      <th>Eski Metin</th>
+      <th>Geliştirilmiş Metin</th>
+      <th>Eski Skor</th>
+      <th>Yeni Skor</th>
+      <th>% Artış</th>
+    </tr>`;
+
+  const body = data.map(r=>`
+    <tr>
+      <td><span class="tag">${r.html||""}</span></td>
+      <td>${r.context||""}</td>
+      <td class="mono">${r.oldText||""}</td>
+      <td class="mono">${r.newText||""}</td>
+      <td>${fmtNum(r.oldScore)}</td>
+      <td>${fmtNum(r.newScore)}</td>
+      <td><span class="chg">${fmtPct(r.delta)}</span></td>
+    </tr>`).join("");
+
+  tableWrap.innerHTML = data.length
+    ? `<table><thead>${head}</thead><tbody>${body}</tbody></table>`
+    : `<div class="muted">Bu görünüm için veri yok (Yenile'ye basmayı deneyin).</div>`;
+}
+
+// Sayfa açılır açılmaz bir kere dene
+loadAll();
+</script>
+</body>
+</html>
